@@ -30,9 +30,9 @@ private TeacherRepository tr;
 		// TODO Auto-generated method stub
 		tr.deleteById(id);
 			}
-	public void update(Integer id,Teacher teach) {
+	public Teacher update(Integer id,Teacher teach) {
 		teach.setId(id);
-		tr.save(teach);
+		return tr.save(teach);
 		}
 	}
 

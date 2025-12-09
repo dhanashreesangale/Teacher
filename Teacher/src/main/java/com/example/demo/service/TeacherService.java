@@ -9,6 +9,6 @@ public interface TeacherService {
  void add(Teacher teach);
  List<Teacher>display();
  void delete(Integer id);
- void update(Integer id,Teacher teach);
+ Teacher update(Integer id,Teacher teach);
 
 }
