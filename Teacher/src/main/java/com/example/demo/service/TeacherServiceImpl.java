@@ -14,9 +14,9 @@ public class TeacherServiceImpl implements TeacherService {
 private TeacherRepository tr;
 
 	@Override
-	public void add(Teacher teach) {
+	public void add(Teacher t) {
 		// TODO Auto-generated method stub
-		tr.save(teach);
+		tr.save(t);
 	}
 
 	@Override
@@ -30,9 +30,9 @@ private TeacherRepository tr;
 		// TODO Auto-generated method stub
 		tr.deleteById(id);
 			}
-	public Teacher update(Integer id,Teacher teach) {
-		teach.setId(id);
-		return tr.save(teach);
+	public Teacher update(Integer id,Teacher t) {
+		t.setId(id);
+		return tr.save(t);
 		}
 	}
 

@@ -6,9 +6,9 @@ import java.util.List;
 import com.example.demo.model.Teacher;
 
 public interface TeacherService {
- void add(Teacher teach);
+ void add(Teacher t);
  List<Teacher>display();
  void delete(Integer id);
- Teacher update(Integer id,Teacher teach);
+ Teacher update(Integer id,Teacher t);
 
 }
